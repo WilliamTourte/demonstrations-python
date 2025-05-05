@@ -16,4 +16,4 @@ def normaliser_chaine_de_caracteres(chaine_de_caracteres):
 
 print(normaliser_chaine_de_caracteres("çè'-è('_è('y_è('-('è_-y('('"""))
 
-## git tu me vois ?
+## git tu me vois ? tu m'entends ?
