@@ -41,3 +41,5 @@ if anagram==True and not copie:
     print(f"{premiermot} et {deuxièmemot} sont des anagrammes")
 else:
     print(f"{premiermot} et {deuxièmemot} ne sont pas des anagrammes")
+    
+#test pour push 2
