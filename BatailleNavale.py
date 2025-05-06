@@ -1,3 +1,6 @@
+import string
+from random import randrange
+
 Touche=False
 taille=int(input("Rentrez la taille voulue du plateau en nombre de cases\n"))+1
 
@@ -20,7 +23,7 @@ def afficher() :
 plateau=crea_plateau()
 
 #Mise en place d'un bateau aléatoire
-from random import randrange
+
 
 lignebateau=randrange(1,taille)
 colonnebateau=randrange(1,taille)
@@ -31,8 +34,18 @@ afficher()
 
 #Recueil coordonnées missile
 def demande() :
-    lignetir=int(input("Entrez la ligne du tir, entre 1 et 4\n"))
-    colonnetir=int(input("Entrez la colonne du tir, entre 1 et 4\n"))
+    alphabet = string.ascii_uppercase
+
+
+    coordotir = str(input("Entrez coordonnées du tir, ex : C2\n"))
+    lettre = coordotir[0]
+    chiffre = coordotir[1]
+
+    lignetir=int(alphabet.index(lettre)+1)
+    print("lignetir", lignetir)
+
+    colonnetir=int(chiffre)
+    print("colonnetir", colonnetir)
     return lignetir, colonnetir
 
 #Tir sur grille
