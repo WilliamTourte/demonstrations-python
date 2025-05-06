@@ -27,7 +27,8 @@ plateau=crea_plateau()
 
 lignebateau=randrange(1,taille)
 colonnebateau=randrange(1,taille)
-print("lignebateau = ", lignebateau, "colonnebateau = ", colonnebateau)
+'''Pour afficher position du bateau'''
+#print("lignebateau = ", lignebateau, "colonnebateau = ", colonnebateau)
 coord_bateau=(lignebateau,colonnebateau)
 
 afficher()
@@ -36,7 +37,7 @@ afficher()
 def demande() :
     alphabet = string.ascii_uppercase
 
-
+    print("Ligne = lettre, Colonne = Chiffre")
     coordotir = str(input("Entrez coordonnées du tir, ex : C2\n"))
     lettre = coordotir[0]
     chiffre = coordotir[1]
