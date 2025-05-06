@@ -1,5 +1,6 @@
 Touche=False
 
+
 #Création de plateau de 4 cases
 def crea_plateau() :
     plateau=dict()
@@ -17,8 +18,14 @@ def afficher() :
 #############################################################################
 plateau=crea_plateau()
 
-#Mise en place d'un bateau en ligne 2, colonne 3
-coord_bateau=(2,3)
+#Mise en place d'un bateau aléatoire
+#randomizer
+from random import randrange
+
+lignebateau=randrange(1,5)
+colonnebateau=randrange(1,5)
+print("lignebateau = ", lignebateau, "colonnebateau = ", colonnebateau)
+coord_bateau=(lignebateau,colonnebateau)
 
 afficher()
 
