@@ -1,29 +1,29 @@
 Touche=False
+taille=int(input("Rentrez la taille voulue du plateau en nombre de cases\n"))+1
 
-
-#Création de plateau de 4 cases
+#Création de plateau de [taille] cases
 def crea_plateau() :
+
     plateau=dict()
-    plateau[1]={1:"?",2:"?",3:"?",4:"?"}
-    plateau[2]={1:"?",2:"?",3:"?",4:"?"}
-    plateau[3]={1:"?",2:"?",3:"?",4:"?"}
-    plateau[4]={1:"?",2:"?",3:"?",4:"?"}
+    for i in range(1,taille) :
+        plateau[i]=dict()
+        for j in range(1,taille) :
+            plateau[i][j]="?"
     return plateau
 
 #Affichage plateau de 4*4 cases
 def afficher() :
-    for i in range(1,5):
+    for i in range(1,taille):
             affichage=plateau[i].values()
             print(*affichage)
 #############################################################################
 plateau=crea_plateau()
 
 #Mise en place d'un bateau aléatoire
-#randomizer
 from random import randrange
 
-lignebateau=randrange(1,5)
-colonnebateau=randrange(1,5)
+lignebateau=randrange(1,taille)
+colonnebateau=randrange(1,taille)
 print("lignebateau = ", lignebateau, "colonnebateau = ", colonnebateau)
 coord_bateau=(lignebateau,colonnebateau)
 
