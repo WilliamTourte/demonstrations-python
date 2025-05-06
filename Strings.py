@@ -86,3 +86,5 @@ print("semaine = SEPARATEUR.join(liste_jours) :\n \"{}\"".format(semaine))
 pause()
 
 print("Fin de la démonstration".center(NB, SYMB))
+
+#ajout pour tester git
