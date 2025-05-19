@@ -28,7 +28,7 @@ plateau=crea_plateau()
 lignebateau=randrange(1,taille)
 colonnebateau=randrange(1,taille)
 '''Pour afficher position du bateau'''
-#print("lignebateau = ", lignebateau, "colonnebateau = ", colonnebateau)
+print("lignebateau = ", lignebateau, "colonnebateau = ", colonnebateau)
 coord_bateau=(lignebateau,colonnebateau)
 
 afficher()
